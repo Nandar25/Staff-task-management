@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff task manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Team Manager</h1>
+        <p>Manage daily tasks for your team</p>
+
+        <section class="task-form">
+            <h2>Add new task</h2>
+
+            <label for="staff">Staff Member</label>
+            <select id="staff">
+                <option value="">Select a staff member</option>
+                <option value="Tom">Tom</option>
+                <option value="Rosy">Rosy</option>
+                <option value="Nancy">Nancy</option>
+            </select>
+
+            <label for="task">Task</label>
+            <select id="task">
+                <option value="">Select a task</option>
+                <option value="Tidy">Tidy</option>
+                <option value="Rail clear">Rail clear</option>
+                <option value="Cashier">Cashier</option>
+            </select>
+
+            <label for="date">Due Date</label>
+            <input type="date" id="date">
+
+            <label for="priority">Priority</label>
+            <select id="priority">
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+
+            <button id="addTask" type="button">Add Task</button>
+        </section>
+
+        <section class="task-list">
+            <h2>Tasks</h2>
+            <div id="tasks"></div>
+        </section>
+    </div>
+</body>
+</html>
